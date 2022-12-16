@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C44A3C63206EDBA0726D57A /* Pods_CoffeeViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DCB6CAEEEFA47FEEF03612 /* Pods_CoffeeViper.framework */; };
+		315D8332294B97E300D881C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315D8331294B97E300D881C3 /* AppDelegate.swift */; };
+		315D833B294B97E400D881C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315D833A294B97E400D881C3 /* Assets.xcassets */; };
+		315D833E294B97E400D881C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315D833C294B97E400D881C3 /* LaunchScreen.storyboard */; };
+		315D8349294B97E400D881C3 /* CoffeeViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315D8348294B97E400D881C3 /* CoffeeViperTests.swift */; };
+		315D8353294B97E400D881C3 /* CoffeeViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315D8352294B97E400D881C3 /* CoffeeViperUITests.swift */; };
+		315D8355294B97E400D881C3 /* CoffeeViperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315D8354294B97E400D881C3 /* CoffeeViperUITestsLaunchTests.swift */; };
+		315D8376294B9A6400D881C3 /* CoffeeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315D8375294B9A6400D881C3 /* CoffeeResponse.swift */; };
+		31E778F7294B9C81003921EE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E778F6294B9C81003921EE /* APIManager.swift */; };
+		31E778F9294B9DB2003921EE /* CoffeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E778F8294B9DB2003921EE /* CoffeeService.swift */; };
+		31E778FC294B9E12003921EE /* CoffeeServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E778FB294B9E12003921EE /* CoffeeServiceInterface.swift */; };
+		31E77901294C61D5003921EE /* CoffeeDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77900294C61D5003921EE /* CoffeeDetailInterface.swift */; };
+		31E77903294C61DD003921EE /* CoffeeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77902294C61DD003921EE /* CoffeeDetailPresenter.swift */; };
+		31E77905294C61E3003921EE /* CoffeeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77904294C61E3003921EE /* CoffeeDetailInteractor.swift */; };
+		31E77907294C61E9003921EE /* CoffeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77906294C61E9003921EE /* CoffeeDetailViewController.swift */; };
+		31E77909294C6417003921EE /* CoffeeDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77908294C6417003921EE /* CoffeeDetailWireFrame.swift */; };
+		31E7790B294C6A84003921EE /* CoffeeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E7790A294C6A84003921EE /* CoffeeImageView.swift */; };
+		31E7790D294C6E37003921EE /* KingfisherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E7790C294C6E37003921EE /* KingfisherService.swift */; };
+		31E77910294C6E52003921EE /* KingfisherInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E7790F294C6E52003921EE /* KingfisherInterface.swift */; };
+		31E77912294C740A003921EE /* ImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77911294C740A003921EE /* ImageDataService.swift */; };
+		31E77919294C8AEB003921EE /* CoffeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77914294C8AEB003921EE /* CoffeeListViewController.swift */; };
+		31E7791A294C8AEB003921EE /* CoffeeListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77915294C8AEB003921EE /* CoffeeListInterface.swift */; };
+		31E7791B294C8AEB003921EE /* CoffeeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77916294C8AEB003921EE /* CoffeeListPresenter.swift */; };
+		31E7791C294C8AEB003921EE /* CoffeeListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77917294C8AEB003921EE /* CoffeeListWireFrame.swift */; };
+		31E7791D294C8AEB003921EE /* CoffeeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E77918294C8AEB003921EE /* CoffeeListInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		315D8345294B97E400D881C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 315D8326294B97E300D881C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 315D832D294B97E300D881C3;
+			remoteInfo = CoffeeViper;
+		};
+		315D834F294B97E400D881C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 315D8326294B97E300D881C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 315D832D294B97E300D881C3;
+			remoteInfo = CoffeeViper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		315D832E294B97E300D881C3 /* CoffeeViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		315D8331294B97E300D881C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		315D833A294B97E400D881C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		315D833D294B97E400D881C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		315D833F294B97E400D881C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315D8344294B97E400D881C3 /* CoffeeViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		315D8348294B97E400D881C3 /* CoffeeViperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViperTests.swift; sourceTree = "<group>"; };
+		315D834E294B97E400D881C3 /* CoffeeViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		315D8352294B97E400D881C3 /* CoffeeViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViperUITests.swift; sourceTree = "<group>"; };
+		315D8354294B97E400D881C3 /* CoffeeViperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		315D8375294B9A6400D881C3 /* CoffeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeResponse.swift; sourceTree = "<group>"; };
+		31E778F6294B9C81003921EE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		31E778F8294B9DB2003921EE /* CoffeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeService.swift; sourceTree = "<group>"; };
+		31E778FB294B9E12003921EE /* CoffeeServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeServiceInterface.swift; sourceTree = "<group>"; };
+		31E77900294C61D5003921EE /* CoffeeDetailInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailInterface.swift; sourceTree = "<group>"; };
+		31E77902294C61DD003921EE /* CoffeeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailPresenter.swift; sourceTree = "<group>"; };
+		31E77904294C61E3003921EE /* CoffeeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailInteractor.swift; sourceTree = "<group>"; };
+		31E77906294C61E9003921EE /* CoffeeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailViewController.swift; sourceTree = "<group>"; };
+		31E77908294C6417003921EE /* CoffeeDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailWireFrame.swift; sourceTree = "<group>"; };
+		31E7790A294C6A84003921EE /* CoffeeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeImageView.swift; sourceTree = "<group>"; };
+		31E7790C294C6E37003921EE /* KingfisherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherService.swift; sourceTree = "<group>"; };
+		31E7790F294C6E52003921EE /* KingfisherInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherInterface.swift; sourceTree = "<group>"; };
+		31E77911294C740A003921EE /* ImageDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataService.swift; sourceTree = "<group>"; };
+		31E77914294C8AEB003921EE /* CoffeeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListViewController.swift; sourceTree = "<group>"; };
+		31E77915294C8AEB003921EE /* CoffeeListInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListInterface.swift; sourceTree = "<group>"; };
+		31E77916294C8AEB003921EE /* CoffeeListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListPresenter.swift; sourceTree = "<group>"; };
+		31E77917294C8AEB003921EE /* CoffeeListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListWireFrame.swift; sourceTree = "<group>"; };
+		31E77918294C8AEB003921EE /* CoffeeListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListInteractor.swift; sourceTree = "<group>"; };
+		6BD0FA0A61E3F9B66A5598F9 /* Pods-CoffeeViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeViper.release.xcconfig"; path = "Target Support Files/Pods-CoffeeViper/Pods-CoffeeViper.release.xcconfig"; sourceTree = "<group>"; };
+		A04147736BB94BB5A441E220 /* Pods-CoffeeViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeViper.debug.xcconfig"; path = "Target Support Files/Pods-CoffeeViper/Pods-CoffeeViper.debug.xcconfig"; sourceTree = "<group>"; };
+		F2DCB6CAEEEFA47FEEF03612 /* Pods_CoffeeViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		315D832B294B97E300D881C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C44A3C63206EDBA0726D57A /* Pods_CoffeeViper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		315D8341294B97E400D881C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		315D834B294B97E400D881C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		315D8325294B97E300D881C3 = {
+			isa = PBXGroup;
+			children = (
+				315D8330294B97E300D881C3 /* CoffeeViper */,
+				315D8347294B97E400D881C3 /* CoffeeViperTests */,
+				315D8351294B97E400D881C3 /* CoffeeViperUITests */,
+				315D832F294B97E300D881C3 /* Products */,
+				87B93810ACC7264D6BE5CE59 /* Pods */,
+				F1E929ADC315177B98FD7AC9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		315D832F294B97E300D881C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				315D832E294B97E300D881C3 /* CoffeeViper.app */,
+				315D8344294B97E400D881C3 /* CoffeeViperTests.xctest */,
+				315D834E294B97E400D881C3 /* CoffeeViperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		315D8330294B97E300D881C3 /* CoffeeViper */ = {
+			isa = PBXGroup;
+			children = (
+				315D8372294B995F00D881C3 /* Network */,
+				315D8362294B97EE00D881C3 /* App */,
+				315D8361294B97E900D881C3 /* Screens */,
+				315D833A294B97E400D881C3 /* Assets.xcassets */,
+				315D833F294B97E400D881C3 /* Info.plist */,
+			);
+			path = CoffeeViper;
+			sourceTree = "<group>";
+		};
+		315D8347294B97E400D881C3 /* CoffeeViperTests */ = {
+			isa = PBXGroup;
+			children = (
+				315D8348294B97E400D881C3 /* CoffeeViperTests.swift */,
+			);
+			path = CoffeeViperTests;
+			sourceTree = "<group>";
+		};
+		315D8351294B97E400D881C3 /* CoffeeViperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				315D8352294B97E400D881C3 /* CoffeeViperUITests.swift */,
+				315D8354294B97E400D881C3 /* CoffeeViperUITestsLaunchTests.swift */,
+			);
+			path = CoffeeViperUITests;
+			sourceTree = "<group>";
+		};
+		315D8361294B97E900D881C3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				31E77913294C8ACC003921EE /* CoffeeList */,
+				31E778FF294C61C7003921EE /* CoffeeDetail */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		315D8362294B97EE00D881C3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				315D8371294B986600D881C3 /* Components */,
+				315D8365294B980200D881C3 /* Views */,
+				315D8364294B97F500D881C3 /* Delegates */,
+				315D8363294B97F200D881C3 /* Core */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		315D8363294B97F200D881C3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		315D8364294B97F500D881C3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				315D8331294B97E300D881C3 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		315D8365294B980200D881C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				315D833C294B97E400D881C3 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		315D8371294B986600D881C3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				31E7790A294C6A84003921EE /* CoffeeImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		315D8372294B995F00D881C3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				31E778F5294B9C5B003921EE /* Services */,
+				31E778F4294B9C56003921EE /* Managers */,
+				315D8373294B996700D881C3 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		315D8373294B996700D881C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				315D8375294B9A6400D881C3 /* CoffeeResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31E778F4294B9C56003921EE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				31E778F6294B9C81003921EE /* APIManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		31E778F5294B9C5B003921EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				31E7790E294C6E47003921EE /* Kingfisher */,
+				31E778FA294B9E08003921EE /* CoffeService */,
+				31E77911294C740A003921EE /* ImageDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		31E778FA294B9E08003921EE /* CoffeService */ = {
+			isa = PBXGroup;
+			children = (
+				31E778F8294B9DB2003921EE /* CoffeeService.swift */,
+				31E778FB294B9E12003921EE /* CoffeeServiceInterface.swift */,
+			);
+			path = CoffeService;
+			sourceTree = "<group>";
+		};
+		31E778FF294C61C7003921EE /* CoffeeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				31E77900294C61D5003921EE /* CoffeeDetailInterface.swift */,
+				31E77902294C61DD003921EE /* CoffeeDetailPresenter.swift */,
+				31E77904294C61E3003921EE /* CoffeeDetailInteractor.swift */,
+				31E77906294C61E9003921EE /* CoffeeDetailViewController.swift */,
+				31E77908294C6417003921EE /* CoffeeDetailWireFrame.swift */,
+			);
+			path = CoffeeDetail;
+			sourceTree = "<group>";
+		};
+		31E7790E294C6E47003921EE /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				31E7790C294C6E37003921EE /* KingfisherService.swift */,
+				31E7790F294C6E52003921EE /* KingfisherInterface.swift */,
+			);
+			path = Kingfisher;
+			sourceTree = "<group>";
+		};
+		31E77913294C8ACC003921EE /* CoffeeList */ = {
+			isa = PBXGroup;
+			children = (
+				31E77918294C8AEB003921EE /* CoffeeListInteractor.swift */,
+				31E77915294C8AEB003921EE /* CoffeeListInterface.swift */,
+				31E77916294C8AEB003921EE /* CoffeeListPresenter.swift */,
+				31E77914294C8AEB003921EE /* CoffeeListViewController.swift */,
+				31E77917294C8AEB003921EE /* CoffeeListWireFrame.swift */,
+			);
+			path = CoffeeList;
+			sourceTree = "<group>";
+		};
+		87B93810ACC7264D6BE5CE59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A04147736BB94BB5A441E220 /* Pods-CoffeeViper.debug.xcconfig */,
+				6BD0FA0A61E3F9B66A5598F9 /* Pods-CoffeeViper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1E929ADC315177B98FD7AC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2DCB6CAEEEFA47FEEF03612 /* Pods_CoffeeViper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		315D832D294B97E300D881C3 /* CoffeeViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 315D8358294B97E400D881C3 /* Build configuration list for PBXNativeTarget "CoffeeViper" */;
+			buildPhases = (
+				30055A8B6D9D75C955903742 /* [CP] Check Pods Manifest.lock */,
+				315D832A294B97E300D881C3 /* Sources */,
+				315D832B294B97E300D881C3 /* Frameworks */,
+				315D832C294B97E300D881C3 /* Resources */,
+				22B045E7D9F4242F6AD78869 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeViper;
+			productName = CoffeeViper;
+			productReference = 315D832E294B97E300D881C3 /* CoffeeViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		315D8343294B97E400D881C3 /* CoffeeViperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 315D835B294B97E400D881C3 /* Build configuration list for PBXNativeTarget "CoffeeViperTests" */;
+			buildPhases = (
+				315D8340294B97E400D881C3 /* Sources */,
+				315D8341294B97E400D881C3 /* Frameworks */,
+				315D8342294B97E400D881C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				315D8346294B97E400D881C3 /* PBXTargetDependency */,
+			);
+			name = CoffeeViperTests;
+			productName = CoffeeViperTests;
+			productReference = 315D8344294B97E400D881C3 /* CoffeeViperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		315D834D294B97E400D881C3 /* CoffeeViperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 315D835E294B97E400D881C3 /* Build configuration list for PBXNativeTarget "CoffeeViperUITests" */;
+			buildPhases = (
+				315D834A294B97E400D881C3 /* Sources */,
+				315D834B294B97E400D881C3 /* Frameworks */,
+				315D834C294B97E400D881C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				315D8350294B97E400D881C3 /* PBXTargetDependency */,
+			);
+			name = CoffeeViperUITests;
+			productName = CoffeeViperUITests;
+			productReference = 315D834E294B97E400D881C3 /* CoffeeViperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		315D8326294B97E300D881C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					315D832D294B97E300D881C3 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					315D8343294B97E400D881C3 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 315D832D294B97E300D881C3;
+					};
+					315D834D294B97E400D881C3 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 315D832D294B97E300D881C3;
+					};
+				};
+			};
+			buildConfigurationList = 315D8329294B97E300D881C3 /* Build configuration list for PBXProject "CoffeeViper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 315D8325294B97E300D881C3;
+			productRefGroup = 315D832F294B97E300D881C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				315D832D294B97E300D881C3 /* CoffeeViper */,
+				315D8343294B97E400D881C3 /* CoffeeViperTests */,
+				315D834D294B97E400D881C3 /* CoffeeViperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		315D832C294B97E300D881C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315D833E294B97E400D881C3 /* LaunchScreen.storyboard in Resources */,
+				315D833B294B97E400D881C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		315D8342294B97E400D881C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		315D834C294B97E400D881C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22B045E7D9F4242F6AD78869 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoffeeViper/Pods-CoffeeViper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoffeeViper/Pods-CoffeeViper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoffeeViper/Pods-CoffeeViper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30055A8B6D9D75C955903742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoffeeViper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		315D832A294B97E300D881C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E77919294C8AEB003921EE /* CoffeeListViewController.swift in Sources */,
+				31E77912294C740A003921EE /* ImageDataService.swift in Sources */,
+				31E7791C294C8AEB003921EE /* CoffeeListWireFrame.swift in Sources */,
+				31E77901294C61D5003921EE /* CoffeeDetailInterface.swift in Sources */,
+				31E77903294C61DD003921EE /* CoffeeDetailPresenter.swift in Sources */,
+				31E7791B294C8AEB003921EE /* CoffeeListPresenter.swift in Sources */,
+				31E7791D294C8AEB003921EE /* CoffeeListInteractor.swift in Sources */,
+				31E77905294C61E3003921EE /* CoffeeDetailInteractor.swift in Sources */,
+				31E7790B294C6A84003921EE /* CoffeeImageView.swift in Sources */,
+				31E7790D294C6E37003921EE /* KingfisherService.swift in Sources */,
+				31E778F7294B9C81003921EE /* APIManager.swift in Sources */,
+				315D8332294B97E300D881C3 /* AppDelegate.swift in Sources */,
+				31E7791A294C8AEB003921EE /* CoffeeListInterface.swift in Sources */,
+				31E778FC294B9E12003921EE /* CoffeeServiceInterface.swift in Sources */,
+				31E77909294C6417003921EE /* CoffeeDetailWireFrame.swift in Sources */,
+				315D8376294B9A6400D881C3 /* CoffeeResponse.swift in Sources */,
+				31E77907294C61E9003921EE /* CoffeeDetailViewController.swift in Sources */,
+				31E778F9294B9DB2003921EE /* CoffeeService.swift in Sources */,
+				31E77910294C6E52003921EE /* KingfisherInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		315D8340294B97E400D881C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315D8349294B97E400D881C3 /* CoffeeViperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		315D834A294B97E400D881C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315D8353294B97E400D881C3 /* CoffeeViperUITests.swift in Sources */,
+				315D8355294B97E400D881C3 /* CoffeeViperUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		315D8346294B97E400D881C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 315D832D294B97E300D881C3 /* CoffeeViper */;
+			targetProxy = 315D8345294B97E400D881C3 /* PBXContainerItemProxy */;
+		};
+		315D8350294B97E400D881C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 315D832D294B97E300D881C3 /* CoffeeViper */;
+			targetProxy = 315D834F294B97E400D881C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		315D833C294B97E400D881C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				315D833D294B97E400D881C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		315D8356294B97E400D881C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		315D8357294B97E400D881C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		315D8359294B97E400D881C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A04147736BB94BB5A441E220 /* Pods-CoffeeViper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95J5ZJ5FVG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeViper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alieren.CoffeeViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		315D835A294B97E400D881C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD0FA0A61E3F9B66A5598F9 /* Pods-CoffeeViper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95J5ZJ5FVG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeViper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alieren.CoffeeViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		315D835C294B97E400D881C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95J5ZJ5FVG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alieren.CoffeeViperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeViper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoffeeViper";
+			};
+			name = Debug;
+		};
+		315D835D294B97E400D881C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95J5ZJ5FVG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alieren.CoffeeViperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeViper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoffeeViper";
+			};
+			name = Release;
+		};
+		315D835F294B97E400D881C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95J5ZJ5FVG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alieren.CoffeeViperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoffeeViper;
+			};
+			name = Debug;
+		};
+		315D8360294B97E400D881C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95J5ZJ5FVG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alieren.CoffeeViperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoffeeViper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		315D8329294B97E300D881C3 /* Build configuration list for PBXProject "CoffeeViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315D8356294B97E400D881C3 /* Debug */,
+				315D8357294B97E400D881C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		315D8358294B97E400D881C3 /* Build configuration list for PBXNativeTarget "CoffeeViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315D8359294B97E400D881C3 /* Debug */,
+				315D835A294B97E400D881C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		315D835B294B97E400D881C3 /* Build configuration list for PBXNativeTarget "CoffeeViperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315D835C294B97E400D881C3 /* Debug */,
+				315D835D294B97E400D881C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		315D835E294B97E400D881C3 /* Build configuration list for PBXNativeTarget "CoffeeViperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315D835F294B97E400D881C3 /* Debug */,
+				315D8360294B97E400D881C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 315D8326294B97E300D881C3 /* Project object */;
+}
